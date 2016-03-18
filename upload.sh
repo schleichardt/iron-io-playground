@@ -1,0 +1,1 @@
+mvn assembly:assembly && zip -r test1.zip ./target && iron worker upload --name test1 --zip test1.zip iron/java java -cp target/test-0.0.1-SNAPSHOT-jar-with-dependencies.jar demo.foo.DemoMain
