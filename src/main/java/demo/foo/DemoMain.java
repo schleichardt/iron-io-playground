@@ -9,5 +9,7 @@ public class DemoMain {
         final WorkerHelper workerHelper = WorkerHelper.fromArgs(args);
         final String payload = workerHelper.getPayload();
         System.err.println(payload);
+        System.err.println(payload.toUpperCase());
+        System.exit(0);//MANDATORY for usage with iron.io
     }
 }
